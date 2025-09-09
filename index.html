@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form novalidate action="">
+      <div class="form-control">
+        <label for="emailid">Enter your Email</label>
+        <input
+          type="email"
+          id="emailid"
+          name="email"
+          placeholder="Enter your email"
+        />
+        <span class="error"></span>
+      </div>
+      <div class="form-control">
+        <label for="country">Enter your Country</label>
+        <input
+          type="text"
+          id="country"
+          name="country"
+          placeholder="Enter your country"
+          pattern="India|USA|UK|Canada"
+          required
+        />
+        <span class="error"></span>
+      </div>
+      <div class="form-control">
+        <label for="postalcode">Enter your postal code</label>
+        <input
+          type="text"
+          id="postalcode"
+          name="postalcode"
+          placeholder="Enter your postal code"
+        />
+        <span class="error"></span>
+      </div>
+      <div class="form-control">
+        <label for="password">Enter your Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+        />
+        <span class="error"></span>
+      </div>
+      <div class="form-control">
+        <label for="confirm-password">Confirm your Password</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          placeholder="Confirm your password"
+        />
+        <span class="error"></span>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
